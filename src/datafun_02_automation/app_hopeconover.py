@@ -202,9 +202,9 @@ def create_files_using_list_comprehension() -> None:
 
 
 def create_files_periodically() -> None:
-    # TODO: Create at least 5 files and less than 25 files with a delay between each creation.
-    # TODO: Change the filename format to start with your name or alias.
-    # TODO: Customize the content of each created file.
+    # Create at least 5 files and less than 25 files with a delay between each creation.
+    # Change the filename format to start with your name or alias.
+    # Customize the content of each created file.
     """Create a small number of files with a delay between each creation.
 
     Arguments: None
