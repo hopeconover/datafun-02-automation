@@ -1,6 +1,6 @@
-"""app_yourname.py - Project script.
+"""app_hopeconover.py - Project script.
 
-Author: Your Name or Alias
+Author: Hope Conover
 Date: 2026-01
 
 Practice key Python skills:
@@ -21,14 +21,14 @@ OBS:
   Find the TODO comments, and as you complete each task, remove the TODO note.
   TODO: Make all your files start with your name or alias in the filename
 
-TODO: Change the Author line of the docstring above to your name or alias.
+ Change the Author line of the docstring above to your name or alias.
 
-TODO: RENAME this file from app_yourname.py to something
+ RENAME this file from app_yourname.py to something
       that includes your name or alias, e.g., app_stellar_analytics.py.
 
-TODO: Update the opening line of the docstring above to match the new file name.
+ Update the opening line of the docstring above to match the new file name.
 
-TODO: Update the associated `uv run python` command in the README.md file.
+ Update the associated `uv run python` command in the README.md file.
 """
 
 
