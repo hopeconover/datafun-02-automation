@@ -49,7 +49,7 @@ LOG: logging.Logger = get_logger("P02", level="DEBUG")
 # === DECLARE SOME GLOBAL VARIABLES ===
 
 # Find the current working directory (cwd) using pathlib.
-# Use UPPER_SNAKE_CASE for constant names.
+# Use UPPER_SNAKE_CONOVER for constant names.
 # Use `type hints` with Final for constants.
 
 ROOT_DIR: Final[Path] = Path.cwd()
@@ -85,38 +85,38 @@ def write_text_file(path: Path, content: str) -> None:
 
 
 def create_files_from_numeric_range() -> None:
-    # TODO: Create a file for each year in the range 2023 to 2026 inclusive.
-    # TODO: Change the docstring, variable names, code, and log messages accordingly.
-    # TODO: Change the filename format to start with your name or alias.
-    # TODO: Customize the content of each created file.
-    """Create one file per quarter for a given inclusive quarter range.
+    # Create a file for each year in the range 2023 to 2026 inclusive.
+    # Change the docstring, variable names, code, and log messages accordingly.
+    # Change the filename format to start with your name or alias.
+    # Customize the content of each created file.
+    """Create one file per year for a given inclusive year range.
 
     Arguments: None
 
     Returns:  None
     """
     # Log the start of this function
-    LOG.info("START FUNCTION 1: create_files_from_numeric_range()")
+    LOG.info("START FUNCTION 1: create_files_from_numeric_range(2023, 2026)")
 
     # Define a variable for the start
-    start_quarter: int = 1
+    start_year: int = 2023
     # Define a variable for the end
-    end_quarter: int = 4
+    end_year: int = 2026
 
     # LOG the starting name and value
-    LOG.info(f"Starting quarter: {start_quarter}")
+    LOG.info(f"Starting year: {start_year}")
 
     # LOG the ending name and value
-    LOG.info(f"Ending quarter: {end_quarter}")
+    LOG.info(f"Ending year: {end_year}")
 
     # For each number in the range (add one to the end to be INCLUSIVE)
-    for quarter_number in range(start_quarter, end_quarter + 1):
+    for year in range(start_year, end_year + 1):
         # Define a filename that starts with my name and uses the quarter number
-        filename: str = f"case_quarter_{quarter_number}.txt"
+        filename: str = f"conover_year_{year}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
-        content: str = f"Here is my report for quarter number: {quarter_number}\n"
+        content: str = f"Here is my annual report for year: {year}\n"
         # Call the provided helper function to write the file and log it
         write_text_file(path, content)
 
@@ -146,7 +146,7 @@ def create_files_from_list() -> None:
     # For each pet name in the pet list (must have a colon and indentation matters!)
     for pet_name in pet_list:
         # Define a filename that starts with my name and uses this pet name
-        filename: str = f"case_{pet_name}.txt"
+        filename: str = f"conover_{pet_name}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
@@ -189,7 +189,7 @@ def create_files_using_list_comprehension() -> None:
     # For each favorite name in the new favorite list
     for favorite in favorite_list:
         # Define a file name that starts with my name and uses this favorite name
-        filename: str = f"case_{favorite}.txt"
+        filename: str = f"conover_{favorite}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
@@ -231,7 +231,7 @@ def create_files_periodically() -> None:
     while i <= count:
         # Define a filename that starts with my name and uses the counter
         # Use 02d formatting for leading zeros and two digits
-        filename: str = f"case_{i:02d}.txt"
+        filename: str = f"conover_{i:02d}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
