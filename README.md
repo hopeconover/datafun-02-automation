@@ -48,7 +48,7 @@ Use the instructions above to get it ALL set up correctly.
 Most people open a terminal on their machine (not VS Code), open in their Repos folder and run:
 
 ```shell
-git clone https://github.com/YOURACCOUNT/datafun-02-automation
+git clone https://github.com/hopeconover/datafun-02-automation
 
 cd datafun-02-automation
 code .
@@ -158,14 +158,14 @@ Change each occurrence to point to your GitHub account instead (spacing and capi
 
 ### Project Task 2. Personalize Your Python File
 
-1. Rename `app_yourname.py` to reflect your name or alias.
+1. Rename `app_hopeconover.py` to reflect your name or alias.
 
 - Find the file the file in the VS Code Explorer window (top icon on the left).
 - Right-click / Rename.
 - Follow conventions: name Python files in lower_snake_case, words joined with underscores, and using `.py` extension.
 
 1. Edit this README.md file to change the run command to call your file instead.
-   Use CTRL+f to search for `app_yourname.py` and replace all occurrences exactly.
+   Use CTRL+f to search for `app_hopeconover.py` and replace all occurrences exactly.
 2. Preview this README.md to make sure it still appears correctly.
    - Find README.md in the VS Code Explorer window (top icon on the left)
    - Right-click / Preview
