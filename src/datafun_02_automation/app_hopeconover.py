@@ -125,11 +125,11 @@ def create_files_from_numeric_range() -> None:
 
 
 def create_files_from_list() -> None:
-    # TODO: Create a file for each item in a list (do not use pets).
-    # TODO: Change the docstring, variable names, code, and log messages accordingly.
-    # TODO: Change the filename format to start with your name or alias.
-    # TODO: Customize the content of each created file.
-    """Create files based on a list of pet names.
+    # Create a file for each item in a list (do not use pets).
+    # Change the docstring, variable names, code, and log messages accordingly.
+    # Change the filename format to start with your name or alias.
+    # Customize the content of each created file.
+    """Create files based on a list of crafts.
 
     Arguments: None
     Returns:  None
@@ -137,20 +137,20 @@ def create_files_from_list() -> None:
     # Log the start of this function
     LOG.info("START FUNCTION 2: create_files_from_list()")
 
-    # Define a pet list
-    pet_list: list[str] = ["dog", "cat", "fish"]
+    # Define a craft list
+    craft_list: list[str] = ["beadwork", "needlework", "paper crafting"]
 
-    # Log my pet list
-    LOG.info(f"Pet list ={pet_list}")
+    # Log my craft list
+    LOG.info(f"Craft list ={craft_list}")
 
-    # For each pet name in the pet list (must have a colon and indentation matters!)
-    for pet_name in pet_list:
+    # For each craft name in the craft list (must have a colon and indentation matters!)
+    for craft_name in craft_list:
         # Define a filename that starts with my name and uses this pet name
-        filename: str = f"conover_{pet_name}.txt"
+        filename: str = f"conover_{craft_name}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
-        content: str = f"Here is my pet data for pet: '{pet_name}'\n"
+        content: str = f"Here is my data for craft: '{craft_name}'\n"
         # Call the provided helper function to write the file and log it
         write_text_file(path, content)
 
