@@ -159,10 +159,10 @@ def create_files_from_list() -> None:
 
 
 def create_files_using_list_comprehension() -> None:
-    # TODO: Create a file for each item in a new list you transformed USING A LIST COMPREHENSION (do not use pets).
-    # TODO: Change the docstring, variable names, code, and log messages accordingly.
-    # TODO: Change the filename format to start with your name or alias.
-    # TODO: Customize the content of each created file.
+    # Create a file for each item in a new list you transformed USING A LIST COMPREHENSION (do not use pets).
+    # Change the docstring, variable names, code, and log messages accordingly.
+    # Change the filename format to start with your name or alias.
+    # Customize the content of each created file.
     """Create files by transforming names using list comprehension.
 
     Arguments: None
@@ -175,16 +175,16 @@ def create_files_using_list_comprehension() -> None:
     LOG.info("WHY: They are super compact list transformations.")
     LOG.info("Read it as <do this logic> FOR each <item> IN <list>.")
 
-    # Define my pet list
-    pet_list: list[str] = ["dog", "cat", "fish"]
-    # Log my pet list
-    LOG.info(f"Pet list ={pet_list}")
+    # Define my craft list
+    craft_list: list[str] = ["beadwork", "needlework", "paper crafting"]
+    # Log my craft list
+    LOG.info(f"Craft list ={craft_list}")
 
     # Define a prefix (or any other transformation logic)
     prefix = "favorite_"
 
-    # Use list comprehension syntax to create a new list from the pet list
-    favorite_list: list[str] = [f"{prefix}{name}" for name in pet_list]
+    # Use list comprehension syntax to create a new list from the craft list
+    favorite_list: list[str] = [f"{prefix}{name}" for name in craft_list]
 
     # For each favorite name in the new favorite list
     for favorite in favorite_list:
@@ -193,7 +193,7 @@ def create_files_using_list_comprehension() -> None:
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
-        content: str = f"Here is the special data about my '{favorite}'\n"
+        content: str = f"Here is the special instructions about my '{favorite}'\n"
         # Call the provided helper function to write the file and log it
         write_text_file(path, content)
 
@@ -217,7 +217,7 @@ def create_files_periodically() -> None:
     # Define wait_seconds: Seconds to wait between file writes.
     wait_seconds: int = 1
     # Define count: How many files to create.
-    count: int = 3
+    count: int = 7
 
     # Log the wait_seconds
     LOG.info(f"Waiting seconds between files: {wait_seconds}")
@@ -235,7 +235,7 @@ def create_files_periodically() -> None:
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
-        content: str = f"If we accidentally make an infinite loop, this will go forever... We're on file count:  {i}\n"
+        content: str = f"If we accidentally make an infinite loop, this will go on forever... and as much as we love Shari Lewis, we prefer for that to not happen. We're on file count:  {i}\n"
         # Call the provided helper function to write the file and log it
         write_text_file(path, content)
 

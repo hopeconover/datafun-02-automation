@@ -1,1 +1,1 @@
-If we accidentally make an infinite loop, this will go forever... We're on file count:  3
+If we accidentally make an infinite loop, this will go on forever... and as much as we love Shari Lewis, we prefer for that to not happen. We're on file count:  3
