@@ -17,7 +17,6 @@ Think of logic you might want to repeat:
 This project uses all these techniques to automate the creation of project text files.
 All these are widely applicable in analytics.
 
-
 Important: <mark>Git add-commit-push **project.log** and generated **.txt** files</mark> (along with other project files).
 
 ---
@@ -70,7 +69,7 @@ If asked: "We noticed a new environment has been created. Do you want to select 
 
 If successful, you'll see a new `.venv` folder appear in the root project folder.
 
-Follow the steps to [Align VS Code with the Environment ](https://denisecase.github.io/pro-analytics-02/02-set-up-project/05-set-up-environment/#2-align-vs-code-with-the-environment-venv).
+Follow the steps to [Align VS Code with the Environment](https://denisecase.github.io/pro-analytics-02/02-set-up-project/05-set-up-environment/#2-align-vs-code-with-the-environment-venv).
 
 Optional (recommended): install and run pre-commit checks (repeat the git `add` and `commit` twice if needed):
 
@@ -165,13 +164,13 @@ Change each occurrence to point to your GitHub account instead (spacing and capi
 - Right-click / Rename.
 - Follow conventions: name Python files in lower_snake_case, words joined with underscores, and using `.py` extension.
 
-2. Edit this README.md file to change the run command to call your file instead.
+1. Edit this README.md file to change the run command to call your file instead.
    Use CTRL+f to search for `app_yourname.py` and replace all occurrences exactly.
-3. Preview this README.md to make sure it still appears correctly.
+2. Preview this README.md to make sure it still appears correctly.
    - Find README.md in the VS Code Explorer window (top icon on the left)
    - Right-click / Preview
    - Fix any issues.
-4. Run the updated command to execute **your** Python script.
+3. Run the updated command to execute **your** Python script.
 
 ### Project Task 3. Implement Your Python File
 
