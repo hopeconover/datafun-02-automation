@@ -19,7 +19,7 @@ Practice key Python skills:
 OBS:
   This is your file to practice and customize.
   Find the TODO comments, and as you complete each task, remove the TODO note.
-  TODO: Make all your files start with your name or alias in the filename
+ Make all your files start with your name or alias in the filename
 
  Change the Author line of the docstring above to your name or alias.
 
